@@ -7,13 +7,16 @@ $grid-breakpoints: (
 ) !default;
 
 $colors: (
-	'primary': #000
+	'primary': #4f6df5,
+	'dark': #000000,
+	'white': #ffffff
 ) !default;
 
 // margin, padding
 $spacers: (
 	'0': 0,
 	'2': 2px,
+	'10': 10px,
 	'at': auto
 ) !default;
 
@@ -31,6 +34,7 @@ $sizes: (
 // border width
 $borders: (
 	'0': 0,
+	'1': 1px,
 	'2': 2px
 ) !default;
 
@@ -38,9 +42,12 @@ $border-radius: (
 	'0': 0,
 	'2': 2px,
 	'4': 4px,
-	'10': 10px,
+	'10': 10px
 ) !default;
 
 $font-size: (
-	'16': 16px
+	'16': 16px,
+	'20': 20px,
+	'24': 24px,
+	'28': 28px
 ) !default;
