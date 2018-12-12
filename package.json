@@ -1,0 +1,39 @@
+{
+  "name": "anthonic",
+  "style": "dist/anthonic.min.css",
+  "version": "1.0.0",
+  "description": "this is css utility. using class via atomic css class.",
+  "scripts": {
+    "dev": "gulp dev",
+    "watch": "gulp watch",
+    "build": "gulp prod"
+  },
+  "keywords": [
+    "anthonic",
+    "atomic",
+    "css",
+    "css",
+    "css",
+    "utility",
+    "css",
+    "helper",
+    "class"
+  ],
+  "author": {
+    "name": "Anthoz",
+    "email": "st.anthoz69@gmail.com",
+    "web": "https://duodeep.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FortAwesome/Font-Awesome"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0"
+  }
+}

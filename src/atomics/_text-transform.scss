@@ -1,0 +1,9 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._ttf-cptl#{$infix} { text-transform: capitalize !important; }
+		._ttf-lwc#{$infix}  { text-transform: lowercase !important; }
+		._ttf-upc#{$infix}  { text-transform: uppercase !important; }
+		._ttf-n#{$infix}    { text-transform: none !important; }
+	}
+}

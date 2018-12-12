@@ -1,0 +1,14 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._bgpst-t#{$infix}      { background-position: top !important; }
+		._bgpst-tr#{$infix}     { background-position: top right !important; }
+		._bgpst-tl#{$infix}     { background-position: top left !important; }
+		._bgpst-bt#{$infix}     { background-position: bottom !important; }
+		._bgpst-btr#{$infix}    { background-position: bottom right !important; }
+		._bgpst-btl#{$infix}    { background-position: bottom left !important; }
+		._bgpst-ct#{$infix}     { background-position: center !important; }
+		._bgpst-ctr#{$infix}    { background-position: center right !important; }
+		._bgpst-ctl#{$infix}    { background-position: center left!important; }
+	}
+}

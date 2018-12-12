@@ -1,0 +1,7 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._tovf-c#{$infix}   { text-overflow: clip !important; }
+		._tovf-els#{$infix} { text-overflow: ellipsis !important; }
+	}
+}

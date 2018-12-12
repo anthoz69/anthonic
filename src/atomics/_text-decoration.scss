@@ -1,0 +1,9 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._tdcrt-udl#{$infix} { text-decoration: underline !important; }
+		._tdcrt-ovl#{$infix} { text-decoration: overline !important; }
+		._tdcrt-lt#{$infix}  { text-decoration: line-through !important; }
+		._tdcrt-n#{$infix}   { text-decoration: none !important; }
+	}
+}

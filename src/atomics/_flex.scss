@@ -1,0 +1,45 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+		._fdrt-r#{$infix}         { flex-direction: row !important; }
+		._fdrt-c#{$infix}         { flex-direction: column !important; }
+		._fdrt-rrv#{$infix}       { flex-direction: row-reverse !important; }
+		._fdrt-clrv#{$infix}      { flex-direction: column-reverse !important; }
+
+		._fw-w#{$infix}           { flex-wrap: wrap !important; }
+		._fw-nw#{$infix}          { flex-wrap: nowrap !important; }
+		._fw-wr#{$infix}          { flex-wrap: wrap-reverse !important; }
+		._f-fill#{$infix}         { flex: 1 1 auto !important; }
+		._fg-0#{$infix}           { flex-grow: 0 !important; }
+		._fg-1#{$infix}           { flex-grow: 1 !important; }
+		._f-shr-0#{$infix}        { flex-shrink: 0 !important; }
+		._f-shr-1#{$infix}        { flex-shrink: 1 !important; }
+
+		._jtfct-fs#{$infix}       { justify-content: flex-start !important; }
+		._jtfct-fe#{$infix}       { justify-content: flex-end !important; }
+		._jtfct-ct#{$infix}       { justify-content: center !important; }
+		._jtfct-spb#{$infix}      { justify-content: space-between !important; }
+		._jtfct-spa#{$infix}      { justify-content: space-around !important; }
+
+		._alit-fs#{$infix}        { align-items: flex-start !important; }
+		._alit-fe#{$infix}        { align-items: flex-end !important; }
+		._alit-ct#{$infix}        { align-items: center !important; }
+		._alit-bl#{$infix}        { align-items: baseline !important; }
+		._alit-st#{$infix}        { align-items: stretch !important; }
+
+		._alct-fs#{$infix}        { align-content: flex-start !important; }
+		._alct-fe#{$infix}        { align-content: flex-end !important; }
+		._alct-ct#{$infix}        { align-content: center !important; }
+		._alct-sb#{$infix}        { align-content: space-between !important; }
+		._alct-sa#{$infix}        { align-content: space-around !important; }
+		._alct-st#{$infix}        { align-content: stretch !important; }
+
+		._als-at#{$infix}         { align-self: auto !important; }
+		._als-fs#{$infix}         { align-self: flex-start !important; }
+		._als-fe#{$infix}         { align-self: flex-end !important; }
+		._als-ct#{$infix}         { align-self: center !important; }
+		._als-bl#{$infix}         { align-self: baseline !important; }
+		._als-st#{$infix}         { align-self: stretch !important; }
+	}
+}

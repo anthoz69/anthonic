@@ -1,0 +1,7 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._ussl-n#{$infix} { user-select: none !important; }
+		._ussl-t#{$infix} { user-select: text !important; }
+	}
+}

@@ -1,0 +1,15 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._fw-100#{$infix} { font-weight: 100 !important; }
+		._fw-200#{$infix} { font-weight: 200 !important; }
+		._fw-300#{$infix} { font-weight: 300 !important; }
+		._fw-400#{$infix} { font-weight: 400 !important; }
+		._fw-500#{$infix} { font-weight: 500 !important; }
+		._fw-600#{$infix} { font-weight: 600 !important; }
+		._fw-700#{$infix} { font-weight: 700 !important; }
+		._fw-800#{$infix} { font-weight: 800 !important; }
+		._fw-900#{$infix} { font-weight: 900 !important; }
+		._fw-bold#{$infix} { font-weight: bold !important; }
+	}
+}

@@ -1,0 +1,18 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		@each $key, $value in $colors {
+			._bdcl-#{$key}#{$infix} { border-color: #{$value} !important; }
+			._bdtcl-#{$key}#{$infix} { border-top-color: #{$value} !important; }
+			._bdbtcl-#{$key}#{$infix} { border-bottom-color: #{$value} !important; }
+			._bdlcl-#{$key}#{$infix} { border-left-color: #{$value} !important; }
+			._bdrcl-#{$key}#{$infix} { border-right-color: #{$value} !important; }
+
+			._bdcl-#{$key}-hover#{$infix}   { @include hover { border-color: #{$value} !important; } }
+			._bdtcl-#{$key}-hover#{$infix}  { @include hover { border-top-color: #{$value} !important; } }
+			._bdbtcl-#{$key}-hover#{$infix} { @include hover { border-bottom-color: #{$value} !important; } }
+			._bdlcl-#{$key}-hover#{$infix}  { @include hover { border-left-color: #{$value} !important; } }
+			._bdrcl-#{$key}-hover#{$infix}  { @include hover { border-right-color: #{$value} !important; } }
+		}
+	}
+}

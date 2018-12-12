@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._zid-0#{$infix} { z-index: 0 !important; }
+		._zid-1#{$infix} { z-index: 1 !important; }
+		._zid-2#{$infix} { z-index: 2 !important; }
+		._zid--1#{$infix} { z-index: -1 !important; }
+		._zid-at#{$infix} { z-index: auto !important; }
+	}
+}

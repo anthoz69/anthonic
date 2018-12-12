@@ -1,0 +1,18 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		@each $key, $value in $sizes {
+			._opct-100#{$infix} { opacity: 1 !important; }
+			._opct-90#{$infix}  { opacity: .9 !important; }
+			._opct-80#{$infix}  { opacity: .8 !important; }
+			._opct-70#{$infix}  { opacity: .7 !important; }
+			._opct-60#{$infix}  { opacity: .6 !important; }
+			._opct-50#{$infix}  { opacity: .5 !important; }
+			._opct-40#{$infix}  { opacity: .4 !important; }
+			._opct-30#{$infix}  { opacity: .3 !important; }
+			._opct-20#{$infix}  { opacity: .2 !important; }
+			._opct-10#{$infix}  { opacity: .1 !important; }
+			._opct-0#{$infix}   { opacity: 0 !important;  }
+		}
+	}
+}

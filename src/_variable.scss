@@ -1,0 +1,46 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$colors: (
+	'primary': #000
+) !default;
+
+// margin, padding
+$spacers: (
+	'0': 0,
+	'2': 2px,
+	'at': auto
+) !default;
+
+// width & height & dimension
+// eg. top right bottom left
+$sizes: (
+	'0': 0,
+	'10': 10px,
+	'25pct': 25%,
+	'50pct': 50%,
+	'100pct': 100%,
+	'at': auto
+) !default;
+
+// border width
+$borders: (
+	'0': 0,
+	'2': 2px
+) !default;
+
+$border-radius: (
+	'0': 0,
+	'2': 2px,
+	'4': 4px,
+	'10': 10px,
+) !default;
+
+$font-size: (
+	'16': 16px
+) !default;

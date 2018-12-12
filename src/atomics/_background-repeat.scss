@@ -1,0 +1,9 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._bgrp-rp#{$infix}  { background-repeat: repeat !important; }
+		._bgrp-rpx#{$infix} { background-repeat: repeat-x !important; }
+		._bgrp-rpy#{$infix} { background-repeat: repeat-y !important; }
+		._bgrp-nrp#{$infix} { background-repeat: no-repeat !important; }
+	}
+}

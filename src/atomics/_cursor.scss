@@ -1,0 +1,11 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._cs-pt#{$infix}  { cursor: pointer !important; }
+		._cs-h#{$infix}   { cursor: help !important; }
+		._cs-nal#{$infix} { cursor: not-allowed !important; }
+		._cs-m#{$infix}   { cursor: move !important; }
+		._cs-w#{$infix}   { cursor: wait !important; }
+		._cs-at#{$infix}  { cursor: auto !important; }
+	}
+}

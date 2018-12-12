@@ -1,0 +1,9 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._tal-l#{$infix}   { text-align: left !important; }
+		._tal-r#{$infix}   { text-align: right !important; }
+		._tal-ct#{$infix}  { text-align: center !important; }
+		._tal-jtf#{$infix} { text-align: justify !important; }
+	}
+}

@@ -1,0 +1,17 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._ovf-vsb#{$infix}  { overflow: visible !important; }
+		._ovf-at#{$infix}   { overflow: auto !important; }
+		._ovf-hd#{$infix}   { overflow: hidden !important; }
+		._ovf-sc#{$infix}   { overflow: scroll !important; }
+		._ovfx-vsb#{$infix} { overflow-x: visible !important; }
+		._ovfx-at#{$infix}  { overflow-x: auto !important; }
+		._ovfx-hd#{$infix}  { overflow-x: hidden !important; }
+		._ovfx-sc#{$infix}  { overflow-x: scroll !important; }
+		._ovfy-vsb#{$infix} { overflow-y: visible !important; }
+		._ovfy-at#{$infix}  { overflow-y: auto !important; }
+		._ovfy-hd#{$infix}  { overflow-y: hidden !important; }
+		._ovfy-sc#{$infix}  { overflow-y: scroll !important; }
+	}
+}

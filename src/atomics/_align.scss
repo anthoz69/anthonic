@@ -1,0 +1,9 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._vtcal-t#{$infix} { vertical-align: top !important; }
+		._vtcal-bt#{$infix} { vertical-align: bottom !important; }
+		._vtcal-bl#{$infix} { vertical-align: baseline !important; }
+		._vtcal-md#{$infix} { vertical-align: middle !important; }
+	}
+}

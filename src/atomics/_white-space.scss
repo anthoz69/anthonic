@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._wsp-nm#{$infix} { white-space: normal !important; }
+		._wsp-nw#{$infix} { white-space: nowrap !important; }
+		._wsp-p#{$infix}  { white-space: pre !important; }
+		._wsp-pl#{$infix} { white-space: pre-line !important; }
+		._wsp-pw#{$infix} { white-space: pre-wrap !important; }
+	}
+}

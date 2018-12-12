@@ -1,0 +1,11 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		@each $key, $value in $sizes {
+			._t-#{$key}#{$infix} { top: #{$value} !important; }
+			._r-#{$key}#{$infix} { right: #{$value} !important; }
+			._b-#{$key}#{$infix} { bottom: #{$value} !important; }
+			._l-#{$key}#{$infix} { left: #{$value} !important; }
+		}
+	}
+}
