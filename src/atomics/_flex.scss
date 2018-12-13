@@ -3,7 +3,7 @@
 		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
 		._fdrt-r#{$infix}         { flex-direction: row !important; }
-		._fdrt-c#{$infix}         { flex-direction: column !important; }
+		._fdrt-cl#{$infix}        { flex-direction: column !important; }
 		._fdrt-rrv#{$infix}       { flex-direction: row-reverse !important; }
 		._fdrt-clrv#{$infix}      { flex-direction: column-reverse !important; }
 
