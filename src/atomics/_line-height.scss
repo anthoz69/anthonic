@@ -1,0 +1,10 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		._lh-100pct#{$infix} { line-height: 100% !important; }
+		._lh-125pct#{$infix} { line-height: 125% !important; }
+		._lh-150pct#{$infix} { line-height: 150% !important; }
+		._lh-175pct#{$infix} { line-height: 175% !important; }
+		._lh-200pct#{$infix} { line-height: 200% !important; }
+	}
+}
