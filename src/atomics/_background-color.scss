@@ -3,6 +3,8 @@
 	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 		@each $key, $value in $colors {
 			._bgcl-#{$key}#{$infix}	{ background-color: #{$value} !important; }
+
+			._bgcl-#{$key}-hover#{$infix}   { @include hover { background-color: #{$value} !important; } }
 		}
 	}
 }
