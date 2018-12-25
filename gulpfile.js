@@ -9,6 +9,8 @@ const sassOption = {
 	includePaths: 'node_modules'
 }
 
+gulp.task('default', ['prod', 'dev'])
+
 gulp.task('prod', function () {
 	return build('./src/main.scss', 'anthonic', true, '.min')
 })
