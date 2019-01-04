@@ -1,7 +1,7 @@
 {
   "name": "anthonic",
   "style": "dist/anthonic.min.css",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "this is css utility. using class via atomic css class.",
   "scripts": {
     "dev": "gulp dev",
