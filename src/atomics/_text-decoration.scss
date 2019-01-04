@@ -5,5 +5,10 @@
 		._tdcrt-ovl#{$infix} { text-decoration: overline !important; }
 		._tdcrt-lt#{$infix}  { text-decoration: line-through !important; }
 		._tdcrt-n#{$infix}   { text-decoration: none !important; }
+
+		._tdcrt-udl-hover#{$infix} { @include hover { text-decoration: underline !important; } }
+		._tdcrt-ovl-hover#{$infix} { @include hover { text-decoration: overline !important; } }
+		._tdcrt-lt-hover#{$infix}  { @include hover { text-decoration: line-through !important; } }
+		._tdcrt-n-hover#{$infix}   { @include hover { text-decoration: none !important; } }
 	}
 }

@@ -6593,6 +6593,22 @@
   text-decoration: none !important;
 }
 
+._tdcrt-udl-hover:hover {
+  text-decoration: underline !important;
+}
+
+._tdcrt-ovl-hover:hover {
+  text-decoration: overline !important;
+}
+
+._tdcrt-lt-hover:hover {
+  text-decoration: line-through !important;
+}
+
+._tdcrt-n-hover:hover {
+  text-decoration: none !important;
+}
+
 @media (min-width: 576px) {
   ._tdcrt-udl-sm {
     text-decoration: underline !important;
@@ -6604,6 +6620,18 @@
     text-decoration: line-through !important;
   }
   ._tdcrt-n-sm {
+    text-decoration: none !important;
+  }
+  ._tdcrt-udl-hover-sm:hover {
+    text-decoration: underline !important;
+  }
+  ._tdcrt-ovl-hover-sm:hover {
+    text-decoration: overline !important;
+  }
+  ._tdcrt-lt-hover-sm:hover {
+    text-decoration: line-through !important;
+  }
+  ._tdcrt-n-hover-sm:hover {
     text-decoration: none !important;
   }
 }
@@ -6621,6 +6649,18 @@
   ._tdcrt-n-md {
     text-decoration: none !important;
   }
+  ._tdcrt-udl-hover-md:hover {
+    text-decoration: underline !important;
+  }
+  ._tdcrt-ovl-hover-md:hover {
+    text-decoration: overline !important;
+  }
+  ._tdcrt-lt-hover-md:hover {
+    text-decoration: line-through !important;
+  }
+  ._tdcrt-n-hover-md:hover {
+    text-decoration: none !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -6636,6 +6676,18 @@
   ._tdcrt-n-lg {
     text-decoration: none !important;
   }
+  ._tdcrt-udl-hover-lg:hover {
+    text-decoration: underline !important;
+  }
+  ._tdcrt-ovl-hover-lg:hover {
+    text-decoration: overline !important;
+  }
+  ._tdcrt-lt-hover-lg:hover {
+    text-decoration: line-through !important;
+  }
+  ._tdcrt-n-hover-lg:hover {
+    text-decoration: none !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -6649,6 +6701,18 @@
     text-decoration: line-through !important;
   }
   ._tdcrt-n-xl {
+    text-decoration: none !important;
+  }
+  ._tdcrt-udl-hover-xl:hover {
+    text-decoration: underline !important;
+  }
+  ._tdcrt-ovl-hover-xl:hover {
+    text-decoration: overline !important;
+  }
+  ._tdcrt-lt-hover-xl:hover {
+    text-decoration: line-through !important;
+  }
+  ._tdcrt-n-hover-xl:hover {
     text-decoration: none !important;
   }
 }
