@@ -36,51 +36,52 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px
-);
+) !default;
 
 $colors: (
-  'primary': #4f6df5,
-  'dark': #000000,
-  'white': #ffffff
-);
+  'tpr': transparent
+) !default;
 
 // margin, padding
 $spacers: (
   '0': 0,
-  '2': 2px,
   'at': auto
-);
+) !default;
 
 // width & height & dimension
 // eg. top right bottom left
 $sizes: (
   '0': 0,
-  '10': 10px,
-  '25pct': 25%,
   '50pct': 50%,
   '100pct': 100%,
+  '100vw': 100vw,
+  '100vh': 100vh,
   'at': auto
-);
+) !default;
 
 // border width
 $borders: (
   '0': 0,
+  '1': 1px,
   '2': 2px
-);
+) !default;
 
 $border-radius: (
-  '0': 0,
-  '2': 2px,
-  '4': 4px,
-  '10': 10px
-);
+  '0': 0px,
+  '50pct': 50%,
+  'max': 9999px,
+  'at': auto
+) !default;
 
 $font-size: (
+  '12': 12px,
+  '14': 14px,
   '16': 16px,
+  '18': 18px,
   '20': 20px,
-  '24': 24px,
-  '28': 28px
-);
+  '30': 30px,
+) !default;
+
 ```
 
 ## Recomend to purge css
