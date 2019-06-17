@@ -12,7 +12,13 @@ npm install anthonic --save
 yarn add anthonic
 ```
 
-```sass
+```scss
+// And import
+
+@import "../node_modules/anthonic/src/main";
+```
+
+```scss
 // your can override any variable. see below.
 $colors: (
   'primary': #4f6df5,
@@ -29,24 +35,24 @@ $colors: (
 
 Every Sass variable in **Anthonic** includes the !default flag allowing you to override the variable’s default value in your own Sass without modifying source code. Copy and paste variables as needed, modify their values.
 
-```sass
+```scss
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1200px
-) !default;
+);
 
 $colors: (
   'tpr': transparent
-) !default;
+);
 
 // margin, padding
 $spacers: (
   '0': 0,
   'at': auto
-) !default;
+);
 
 // width & height & dimension
 // eg. top right bottom left
@@ -57,21 +63,21 @@ $sizes: (
   '100vw': 100vw,
   '100vh': 100vh,
   'at': auto
-) !default;
+);
 
 // border width
 $borders: (
   '0': 0,
   '1': 1px,
   '2': 2px
-) !default;
+);
 
 $border-radius: (
   '0': 0px,
   '50pct': 50%,
   'max': 9999px,
   'at': auto
-) !default;
+);
 
 $font-size: (
   '12': 12px,
@@ -80,8 +86,7 @@ $font-size: (
   '18': 18px,
   '20': 20px,
   '30': 30px,
-) !default;
-
+);
 ```
 
 ## Recomend to purge css
