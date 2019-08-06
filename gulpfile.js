@@ -1,4 +1,4 @@
-const gulp = require('gulp');
+const { src, dest, series, watch, parallel } = require('gulp')
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
@@ -9,31 +9,34 @@ const sassOption = {
 	includePaths: 'node_modules'
 }
 
-gulp.task('default', ['prod', 'dev'])
+function watchFile() {
+	watch('./src/**/*.scss', dev);
+}
 
-gulp.task('prod', function () {
-	return build('./src/main.scss', 'anthonic', true, '.min')
-})
-
-gulp.task('dev', function () {
+function dev () {
 	return build('./src/main.scss', 'anthonic', false, '')
-})
+}
 
-gulp.task('watch', function () {
-	return gulp.watch('./src/**/*.scss', ['dev'])
-})
+function production () {
+	return build('./src/main.scss', 'anthonic', true, '.min')
+}
 
 function build(source, basename, compress = false, suffix = '.min') {
 	sassOption.outputStyle = compress == true ? 'compressed' : 'expanded'
-	gulp.src(source)
+	return src(source)
 	.pipe(sass(sassOption).on('error', sass.logError))
 	.pipe(autoprefixer({
-		browsers: ['last 2 versions']
+		overrideBrowserslist: ['last 2 versions']
 	}))
 	.pipe(rename({
 		basename: basename,
 		suffix: suffix,
 		extname: '.css'
 	}))
-	.pipe(gulp.dest(output))
+	.pipe(dest(output))
 }
+
+exports.watch = parallel(watchFile);
+exports.prod = series(production)
+exports.dev = series(dev)
+exports.default = series(dev, production)

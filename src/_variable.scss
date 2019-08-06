@@ -6,46 +6,76 @@ $grid-breakpoints: (
   xl: 1200px
 ) !default;
 
-$colors: (
-	'tpr': transparent
-) !default;
+$colors: () !default;
+
+$colors: map-merge(
+  (
+    'tpr': transparent
+  ),
+  $colors
+);
 
 // margin, padding
-$spacers: (
-	'0': 0,
+$spacers: () !default;
+
+$spacers: map-merge(
+  (
+    '0': 0,
 	'at': auto
-) !default;
+  ),
+  $spacers
+);
 
 // width & height & dimension
 // eg. top right bottom left
-$sizes: (
-	'0': 0,
+$sizes: () !default;
+
+$sizes: map-merge(
+  (
+    '0': 0,
 	'50pct': 50%,
 	'100pct': 100%,
 	'100vw': 100vw,
 	'100vh': 100vh,
 	'at': auto
-) !default;
+  ),
+  $sizes
+);
 
 // border width
-$borders: (
+$borders: () !default;
+
+$borders: map-merge(
+  (
 	'0': 0,
 	'1': 1px,
 	'2': 2px
-) !default;
+  ),
+  $borders
+);
 
-$border-radius: (
-	'0': 0px,
+$border-radius: () !default;
+
+$border-radius: map-merge(
+  (
+	'0': 0,
 	'50pct': 50%,
 	'max': 9999px,
 	'at': auto
-) !default;
+  ),
+  $border-radius
+);
 
-$font-size: (
+$font-size: () !default;
+
+$font-size: map-merge(
+  (
 	'12': 12px,
 	'14': 14px,
 	'16': 16px,
 	'18': 18px,
 	'20': 20px,
 	'30': 30px,
-) !default;
+  ),
+  $font-size
+);
